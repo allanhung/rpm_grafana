@@ -34,4 +34,4 @@ sed -i -e "s/\"node\":.*/\"node\": \"${NODEVER:1:10}\",/g" -e "s/\"npm\":.*/\"np
 yarn install --pure-lockfile
 npm run build
 
-rpmbuild -bb $RPMBUILDROOT/SPECS/golang-github-grafana-grafana.spec
+rpmbuild -bb $RPMBUILDROOT/SPECS/grafana.spec
